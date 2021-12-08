@@ -18,42 +18,42 @@ int main() {
         char* cathedra;
         char* subject;
     };
-    cout << "Ââåäèòå êîëè÷åñòâî ïðåïîäàâàòåëåé: "; 
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹: "; 
     cin >> n;
     struct prepod* p = new struct prepod[n];
-    cout << "Ââåäèòå ïðåïîäàâàòåëÿ 1"  << endl;
-    cout << "Ôàìèëèÿ: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ 1"  << endl;
+    cout << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: ";
     gets_s(buff);
     gets_s(buff);
     p[0].lastname = new char[strlen(buff) + 1];
     strcpy(p[0].lastname, buff);
-    cout << "Èìÿ: ";
+    cout << "Ð˜Ð¼Ñ: ";
     gets_s(buff);
     p[0].firstname = new char[strlen(buff) + 1];
     strcpy(p[0].firstname, buff);
-    cout << "Êàôåäðà: ";
+    cout << "ÐšÐ°Ñ„ÐµÐ´Ñ€Ð°: ";
     gets_s(buff);
     p[0].cathedra = new char[strlen(buff) + 1];
     strcpy(p[0].cathedra, buff);
-    cout << "Ïðåäìåò: ";
+    cout << "ÐŸÑ€ÐµÐ´Ð¼ÐµÑ‚: ";
     gets_s(buff);
     p[0].subject = new char[strlen(buff) + 1];
     strcpy(p[0].subject, buff);
     for (int i = 1; i < n; i++) {
-        cout << "Ââåäèòå ïðåïîäàâàòåëÿ " << i + 1 << endl;
-        cout << "Ôàìèëèÿ: ";
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ " << i + 1 << endl;
+        cout << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: ";
         gets_s(buff);
         p[i].lastname = new char[strlen(buff) + 1];
         strcpy(p[i].lastname, buff);
-        cout << "Èìÿ: ";
+        cout << "Ð˜Ð¼Ñ: ";
         gets_s(buff);
         p[i].firstname = new char[strlen(buff) + 1];
         strcpy(p[i].firstname, buff);
-        cout << "Êàôåäðà: ";
+        cout << "ÐšÐ°Ñ„ÐµÐ´Ñ€Ð°: ";
         gets_s(buff);
         p[i].cathedra = new char[strlen(buff) + 1];
         strcpy(p[i].cathedra, buff);
-        cout << "Ïðåäìåò: ";
+        cout << "ÐŸÑ€ÐµÐ´Ð¼ÐµÑ‚: ";
         gets_s(buff);
         p[i].subject = new char[strlen(buff) + 1];
         strcpy(p[i].subject, buff);
@@ -61,33 +61,33 @@ int main() {
     /*for (int i = 0; i < n; i++) {
         cout << endl << endl << p[i].lastname << endl << p[i].firstname << endl << p[i].cathedra << endl << p[i].subject << endl;
     }*/
-    cout << endl << "Äîáàâèòü íîâîãî ïðåïîäàâàòåëÿ                            1" << endl;
-    cout << "Ðàñïå÷àòàòü èíôîðìàöèþ î ïðåïîäàâàòåëå â òàáëè÷íîì âèäå  2" << endl;
-    cout << "Íàéòè âñå ïðåäìåòû, êîòîðûå âåäåò äàííûé ïðåïîäàâàòåëü   3" << endl;
-    cout << "Íàéòè âñåõ ïðåïîäàâàòåëåé çàäàííîé êàôåäðû               4" << endl;
-    cout << "Çàêîí÷èòü âûïîëíåíèå ïðîãðàììû                           5" << endl;
+    cout << endl << "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ                            1" << endl;
+    cout << "Ð Ð°ÑÐ¿ÐµÑ‡Ð°Ñ‚Ð°Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ðµ Ð² Ñ‚Ð°Ð±Ð»Ð¸Ñ‡Ð½Ð¾Ð¼ Ð²Ð¸Ð´Ðµ  2" << endl;
+    cout << "ÐÐ°Ð¹Ñ‚Ð¸ Ð²ÑÐµ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ñ‹, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð²ÐµÐ´ÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»ÑŒ   3" << endl;
+    cout << "ÐÐ°Ð¹Ñ‚Ð¸ Ð²ÑÐµÑ… Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð¹ ÐºÐ°Ñ„ÐµÐ´Ñ€Ñ‹               4" << endl;
+    cout << "Ð—Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹                           5" << endl;
     cin >> m;
-    if (m!=1&&m!=2&&m!=3&&m!=4&&m!=5) cout << "Îøèáêà. Ïîâòîðèòå ââîä: ";
+    if (m!=1&&m!=2&&m!=3&&m!=4&&m!=5) cout << "ÐžÑˆÐ¸Ð±ÐºÐ°. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´: ";
     while (m != 1 && m != 2 && m != 3 && m != 4 && m != 5) cin >> m;
     cout << endl;
     while (m != 5) {
         if (m == 1) {
             n = n + 1;
-            cout << "Ââåäèòå ïðåïîäàâàòåëÿ " << n << endl;
-            cout << "Ôàìèëèÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ " << n << endl;
+            cout << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: ";
             gets_s(buff);
             gets_s(buff);
             p[n-1].lastname = new char[strlen(buff) + 1];
             strcpy(p[n - 1].lastname, buff);
-            cout << "Èìÿ: ";
+            cout << "Ð˜Ð¼Ñ: ";
             gets_s(buff);
             p[n - 1].firstname = new char[strlen(buff) + 1];
             strcpy(p[n - 1].firstname, buff);
-            cout << "Êàôåäðà: ";
+            cout << "ÐšÐ°Ñ„ÐµÐ´Ñ€Ð°: ";
             gets_s(buff);
             p[n - 1].cathedra = new char[strlen(buff) + 1];
             strcpy(p[n - 1].cathedra, buff);
-            cout << "Ïðåäìåò: ";
+            cout << "ÐŸÑ€ÐµÐ´Ð¼ÐµÑ‚: ";
             gets_s(buff);
             p[n - 1].subject = new char[strlen(buff) + 1];
             strcpy(p[n - 1].subject, buff);
@@ -99,21 +99,21 @@ int main() {
         if (m == 2) {
             int k = 0, k1=0;
             char* ln, * fn;
-            cout << "Ââåäèòå ôàìèëèþ ïðåïîäàâàòåëÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ: ";
             gets_s(buff);
             gets_s(buff);
             ln = new char[strlen(buff) + 1];
             strcpy(ln, buff);
-            cout << "Ââåäèòå èìÿ ïðåïîäàâàòåëÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ: ";
             gets_s(buff);
             fn = new char[strlen(buff) + 1];
             strcpy(fn, buff);
-            cout << "Èíôîðìàöèÿ: " << endl;
+            cout << "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ: " << endl;
             for (int i = 0; i < n; i++) 
                 if (strcmp(ln, p[i].lastname) == 0 && strcmp(fn, p[i].firstname)==0) k++;
-            if (k == 0) cout << "Íåò òàêîãî ïðåïîäàâàòåëÿ" << endl;
+            if (k == 0) cout << "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ" << endl;
             else {
-                cout << setw(10) << "Ôàìèëèÿ" << setw(10) << "Èìÿ" << setw(10) << "Êàôåäðà" << setw(10) << "Ïðåäìåò" << endl;
+                cout << setw(10) << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ" << setw(10) << "Ð˜Ð¼Ñ" << setw(10) << "ÐšÐ°Ñ„ÐµÐ´Ñ€Ð°" << setw(10) << "ÐŸÑ€ÐµÐ´Ð¼ÐµÑ‚" << endl;
                 for (int i = 0; i < n; i++) {
                     if (strcmp(ln, p[i].lastname) == 0 && strcmp(fn, p[i].firstname) == 0) {
                         k1++;
@@ -127,29 +127,29 @@ int main() {
         if (m == 3) {
             int count = 0;
             char* ln, * fn;
-            cout << "Ââåäèòå ôàìèëèþ ïðåïîäàâàòåëÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ: ";
             gets_s(buff);
             gets_s(buff);
             ln = new char[strlen(buff) + 1];
             strcpy(ln, buff);
-            cout << "Ââåäèòå èìÿ ïðåïîäàâàòåëÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ: ";
             gets_s(buff);
             fn = new char[strlen(buff) + 1];
             strcpy(fn, buff);
-            cout << "Ïðåäìåòû:" << endl;
+            cout << "ÐŸÑ€ÐµÐ´Ð¼ÐµÑ‚Ñ‹:" << endl;
             for (int i = 0; i < n; i++)
                 if (strcmp(ln, p[i].lastname) == 0 && strcmp(fn, p[i].firstname) == 0) {
                     cout << p[i].subject << endl;
                     count++;
                 }
-            if (count == 0) cout << "Íåò òàêîãî ïðåïîäàâàòåëÿ";
+            if (count == 0) cout << "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ";
         } else
         if (m == 4) {
             string *Names;
             Names = new string[n];
             int count = 0;
             char *c;
-            cout << "Ââåäèòå êàôåäðó: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ°Ñ„ÐµÐ´Ñ€Ñƒ: ";
             gets_s(buff);
             gets_s(buff);
             c = new char[strlen(buff) + 1];
@@ -159,7 +159,7 @@ int main() {
                     Names[count] = string() + p[i].lastname + ' ' + p[i].firstname;
                     count++;
                 }
-            if (count == 0) cout << "Íåò ïðåïîäàâàòåëåé ýòîé êàôåäðû";
+            if (count == 0) cout << "ÐÐµÑ‚ Ð¿ÐµÑ€Ð¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð¹ ÐºÐ°Ñ„ÐµÐ´Ñ€Ñ‹";
             else {
                 for (int i = 0; i < count - 1; i++) {
                     for (int j = i + 1; j < count; j++)
@@ -173,17 +173,17 @@ int main() {
                         count--;
                     }
                 }
-                cout << "Ïðåïîäàâàòåëè çàäàííîé êàôåäðû: " << endl;
+                cout << "ÐŸÑ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ð¸ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð¹ ÐºÐ°Ñ„ÐµÐ´Ñ€Ñ‹: " << endl;
                 for (int i = 0; i < count; i++) cout << Names[i] << endl;
             }
         }
-        cout << endl << "Äîáàâèòü íîâîãî ïðåïîäàâàòåëÿ                            1" << endl;
-        cout << "Ðàñïå÷àòàòü èíôîðìàöèþ î ïðåïîäàâàòåëå â òàáëè÷íîì âèäå  2" << endl;
-        cout << "Íàéòè âñå ïðåäìåòû, êîòîðûå âåäåò äàííûé ïðåïîäàâàòåëü   3" << endl;
-        cout << "Íàéòè âñåõ ïðåïîäàâàòåëåé çàäàííîé êàôåäðû               4" << endl;
-        cout << "Çàêîí÷èòü âûïîëíåíèå ïðîãðàììû                           5" << endl;
+        cout << endl << "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ñ                            1" << endl;
+        cout << "Ð Ð°ÑÐ¿ÐµÑ‡Ð°Ñ‚Ð°Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»Ðµ Ð² Ñ‚Ð°Ð±Ð»Ð¸Ñ‡Ð½Ð¾Ð¼ Ð²Ð¸Ð´Ðµ  2" << endl;
+        cout << "ÐÐ°Ð¹Ñ‚Ð¸ Ð²ÑÐµ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚Ñ‹, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð²ÐµÐ´ÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»ÑŒ   3" << endl;
+        cout << "ÐÐ°Ð¹Ñ‚Ð¸ Ð²ÑÐµÑ… Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð¹ ÐºÐ°Ñ„ÐµÐ´Ñ€Ñ‹               4" << endl;
+        cout << "Ð—Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹                           5" << endl;
         cin >> m;
-        if (m!=1&&m!=2&&m!=3&&m!=4&&m!=5) cout << "Îøèáêà. Ïîâòîðèòå ââîä: ";
+        if (m!=1&&m!=2&&m!=3&&m!=4&&m!=5) cout << "ÐžÑˆÐ¸Ð±ÐºÐ°. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´: ";
     while (m != 1 && m != 2 && m != 3 && m != 4 && m != 5) cin >> m;
     }
 }
